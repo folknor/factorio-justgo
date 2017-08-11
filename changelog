@@ -1,0 +1,11 @@
+0.2.2: Check if the vehicle is valid before we try picking it up.
+0.2.1: I forgot you can store LuaEntity in the global; makes the auto-pickup code much smaller.
+0.2.0: Added option to automatically pick up the vehicle when you exit (enabled by default).
+0.1.3: Enabled for trains.
+0.1.2:
+	- Bump version to 0.15.
+0.1.1:
+	- Ensure that we trigger on_player_driving_changed_state
+	  so that we work with Pavement Drive Assist
+0.1.0:
+	- Initial release

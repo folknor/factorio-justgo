@@ -1,0 +1,12 @@
+{
+	"name": "folk-justgo",
+	"version": "0.2.2",
+	"factorio_version": "0.15",
+	"title": "Just go!",
+	"author": "folk",
+	"contact": "",
+	"homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=45554",
+	"description": "Instantly pops you into a filtered vehicle when you place it within reach of the player character, and picks it up again when you exit.",
+	"dependencies": ["base >= 0.15.11"],
+	"license": "CC-BY-NC 4.0"
+}
