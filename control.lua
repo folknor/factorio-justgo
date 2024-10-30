@@ -24,6 +24,8 @@ local function onBuildEntity(event)
 	local player = game.players[event.player_index]
 	if player.driving or (player.vehicle ~= nil and player.vehicle.valid) then return end
 
+	if player.is_cursor_blueprint() then return end
+
 	local inv = player.get_inventory(defines.inventory.character_main)
 	if not inv or not inv.valid or not inv.is_filtered() then return end
 
