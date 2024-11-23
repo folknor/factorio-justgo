@@ -2,12 +2,18 @@
 Version: 0.2.8
 Date: 2024-11-23
   Changes:
+    - Fixed version numbers in changelog gg folk noob
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.7
+Date: 2024-11-23
+  Changes:
     - Clear the cursor after entering a vehicle to prevent placing ghosts because of interaction
       with other random mods
     - Proper changelog.txt added
 
 ---------------------------------------------------------------------------------------------------
-Version: 0.2.7
+Version: 0.2.6
 Date: ???
   Changes:
     - Should hopefully no longer react to blueprinted cars.
