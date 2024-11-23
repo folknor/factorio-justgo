@@ -1,0 +1,76 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.2.8
+Date: 2024-11-23
+  Changes:
+    - Clear the cursor after entering a vehicle to prevent placing ghosts because of interaction
+      with other random mods
+    - Proper changelog.txt added
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.7
+Date: ???
+  Changes:
+    - Should hopefully no longer react to blueprinted cars.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.5
+Date: ???
+  Changes:
+    - Forgot the thumnail image.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.4
+Date: ???
+  Changes:
+    - Updated for 2.0.
+    - No longer works with filtered quickbar slots because they've removed the ability for
+      modders to interact with the quickbar as an inventory.
+      Now you have to filter the main inventory.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: ???
+  Changes:
+    - 0.16 bump.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: ???
+  Changes:
+    - Check if the vehicle is valid before we try picking it up.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: ???
+  Changes:
+    - I forgot you can store LuaEntity in the global; makes the auto-pickup code much smaller.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: ???
+  Changes:
+    - Added option to automatically pick up the vehicle when you exit (enabled by default).
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: ???
+  Changes:
+    - Enabled for trains.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: ???
+  Changes:
+    - Bump version to 0.15.
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.1
+Date: ???
+  Changes:
+    - Ensure that we trigger on_player_driving_changed_state so that we work with Pavement Drive Assist
+
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: ???
+  Changes:
+    - Initial release

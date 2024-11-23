@@ -9,7 +9,7 @@ local pickup = setmetatable({}, {
 		local v = settings.get_player_settings(game.players[id])[sPickupKey].value
 		rawset(self, id, v)
 		return v
-	end
+	end,
 })
 script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
 	if not event or not event.setting then return end
@@ -41,6 +41,7 @@ local function onBuildEntity(event)
 			player.teleport(e.position)
 			player.driving = true
 			storage.ent[player.index] = e
+			player.clear_cursor()
 			return -- We are done, just go!
 		else
 			filterCache[playerIndex][e.name] = nil
@@ -54,6 +55,7 @@ local function onBuildEntity(event)
 			player.teleport(e.position)
 			player.driving = true
 			storage.ent[player.index] = e
+			player.clear_cursor()
 			return -- We are done, just go!
 		end
 	end
