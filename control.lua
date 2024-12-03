@@ -12,6 +12,7 @@ local pickup = setmetatable({}, {
 	end,
 })
 script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
+	---@cast event OnRuntimeModSettingChanged
 	if not event or not event.setting then return end
 	if event.setting == sPickupKey then
 		pickup[event.player_index] = nil
@@ -19,6 +20,7 @@ script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
 end)
 
 local function onBuildEntity(event)
+	---@cast event OnBuiltEntity
 	local e = event.entity
 	if not e or not e.valid or not acceptedTypes[e.type] then return end
 	local player = game.players[event.player_index]
@@ -34,7 +36,7 @@ local function onBuildEntity(event)
 
 	local playerIndex = event.player_index
 	if not filterCache[playerIndex] then filterCache[playerIndex] = {} end
-	if filterCache[playerIndex] and filterCache[playerIndex][e.name] then
+	if filterCache[playerIndex] and filterCache[playerIndex][e.name] and filterCache[playerIndex][e.name] <= #inv then
 		local f = inv.get_filter(filterCache[playerIndex][e.name])
 		if type(f) == "string" and f == e.name then
 			if not storage.ent then storage.ent = {} end
@@ -63,6 +65,7 @@ end
 script.on_event(defines.events.on_built_entity, onBuildEntity)
 
 local function driving(event)
+	---@cast event OnPlayerDrivingChangedState
 	if not storage.ent or not storage.ent[event.player_index] then return end
 	local player = game.players[event.player_index]
 	if not player or not player.valid or player.driving or player.vehicle then return end
