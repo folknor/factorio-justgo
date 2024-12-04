@@ -1,4 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.2.9
+Date: 2024-12-04
+  Changes:
+    - Fixed a crash if you had a filtered slot at the end of your inventory and
+      armor equipped, so that when you died that slot no longer existed
+
+---------------------------------------------------------------------------------------------------
 Version: 0.2.8
 Date: 2024-11-23
   Changes:
